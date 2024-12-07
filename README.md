@@ -40,7 +40,7 @@ const editableElements = new EditElement('.editable', {
   onLeave: (element) => {
     console.log('Editing ended', element);
   },
-  editingElementClassName: 'editing'
+  editingElementClassName: 'editing',
   submitKey: 'Enter',
 });
 ```
