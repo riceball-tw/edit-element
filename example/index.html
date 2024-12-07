@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <script type="module" defer src="script.js"></script>
+  <style>
+    [data-target] {
+      padding: 2rem;
+    }
+
+    .editable-element-foo:focus {
+      background-color: yellow;
+    }
+
+    .editable-element-bar:focus {
+      background-color: teal;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Editable Element Demo</h1>
+
+  <button data-destroy-button type="button">Destory All Editable</button>
+  <button data-destroy-specific-button type="button">Destory b editable</button>
+  <div data-target class="editable-element-foo">
+    foo
+  </div>
+  <div data-target data-target-bar class="editable-element-bar">
+    bar
+  </div>
+</body>
+</html>
