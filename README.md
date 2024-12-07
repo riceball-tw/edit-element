@@ -25,6 +25,26 @@ import { EditElement } from '../dist/index.mjs';
 const editableElements = new EditElement('.editable');
 ```
 
+## Advanced Usage
+```typescript
+import EditElement from 'edit-element';
+
+// Make all elements with .editable class editable
+const editableElements = new EditElement('.editable', {
+  onEnter: (element) => {
+    console.log('Editing started', element);
+  },
+  onSubmit: (element) => {
+    console.log('Edit submitted', element.textContent);
+  },
+  onLeave: (element) => {
+    console.log('Editing ended', element);
+  },
+  editingElementClassName: 'editing'
+  submitKey: 'Enter',
+});
+```
+
 ## Configuration Options
 
 ### `Options` Interface
