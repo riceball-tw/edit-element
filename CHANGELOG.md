@@ -1,5 +1,11 @@
 # edit-element
 
+## 2.0.1
+
+### Patch Changes
+
+- Make submitKey option optional
+
 ## 2.0.0
 
 ### Major Changes
