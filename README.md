@@ -19,7 +19,7 @@ npm install edit-element
 ## Basic Usage
 
 ```typescript
-import { EditElement } from '../dist/index.mjs';
+import { EditElement } from 'edit-element';
 
 // Make all elements with .editable class in-place editable
 const editableElements = new EditElement('.editable');
