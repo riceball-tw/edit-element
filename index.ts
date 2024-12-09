@@ -3,7 +3,7 @@ interface Options {
   onSubmit?: (element: HTMLElement) => void;
   onLeave?: (element: HTMLElement) => void;
   editingElementClassName?: string;
-  submitKey: string;
+  submitKey?: string;
 }
 
 type EditableElementsMap = Map<HTMLElement, { 
