@@ -2,13 +2,13 @@ import { EditElement } from '../dist/index.mjs'
 
 const editables = new EditElement(`[data-target]`, {
   onEnter: (element) => {
-    console.log('enter', element.textContent);
+    element.setAttribute('data-entered', '')
   },
   onSubmit: (element) => {
-    console.log('submit', element.textContent);
+    element.setAttribute('data-submitted', '')
   },
   onLeave: (element) => {
-    console.log('leave', element.textContent);
+    element.setAttribute('data-leave', '')
   },
   editingElementClassName: 'active',
   // submitKey : 'Enter'
